@@ -1,0 +1,32 @@
+
+.top-footer{
+    background-color: #3b1616;
+    padding: 15px;
+    height: 100px;
+   text-align: center;
+   color: #fff;
+}
+.top-footer h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+footer .logo h5{
+    color: #fff;
+    font-size: 21px;
+    font-family: 'Rubik';
+    font-weight: 400;
+}
+.footer-copyright{
+    color: #e509ae;
+}
+footer a{
+    margin: 0px 5px;
+    transition: 0.3s ease;
+}
+.footer-socail-media i:hover{
+    color: #4339d4;
+}
+.footer-socail-media a{
+    color: #e509ae;
+
+}

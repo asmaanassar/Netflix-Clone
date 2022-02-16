@@ -1,7 +1,4 @@
-import { Button, Card, Col } from 'react-bootstrap';
-import { useState, useEffect } from 'react';
-import ModalMovie from '../ModalMovie/ModalMovie';
-
+import { Button,Card, Col } from 'react-bootstrap';
 function Movie(props) {
 
     return (
@@ -24,7 +21,6 @@ function Movie(props) {
             </Card>
         </Col>
 
-    )
-
+    );
 }
 export default Movie

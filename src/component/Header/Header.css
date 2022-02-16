@@ -1,0 +1,19 @@
+.top-Header{
+    background-color: #3b1616;
+    padding: 15px;
+    height: 100px;
+   text-align:right;
+   color: #fff;
+}
+.top-Header h5 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align:center;
+}
+header .logo h5{
+    color: #fff;
+    font-size: 21px;
+    font-family: 'Rubik';
+    font-weight: 400;
+}
+
