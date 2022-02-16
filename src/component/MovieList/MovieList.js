@@ -1,8 +1,8 @@
 
 import Movie from '../Movie/Movie';
 import ModalMovie from '../ModalMovie/ModalMovie';
-import axios from 'axios';
-import { useState, useEffect } from 'react';
+import { Container, Row } from 'react-bootstrap';
+import { useState} from 'react';
 
 function MovieList(props) {
     const [cardInfo, setCardInfo] = useState({});
@@ -10,21 +10,25 @@ function MovieList(props) {
     const handleClose = () => setShow(false);
     console.log(props.data)
     return (
-        
+
         <>
-            {
-                props.data.length && props.data.map((ele) => (
-                    <Movie data={ele} show={setShow} cardInfo={setCardInfo} />
-                    
-            ))
+            <Container className='div-container'>
+                <Row md={3} className="main">
+                {
+                    props.data.length && props.data.map((ele) => (
+                        <Movie data={ele} show={setShow} cardInfo={setCardInfo} />
+
+                    ))
                 }
+            </Row>
+        </Container>
 
             {
-                <ModalMovie cardInfo={cardInfo} show={show} handleClose={handleClose} />
-            }
-            {
-                !props.data.length && <div><h2>No Such Results, Please try again later</h2></div>
-            }
+        <ModalMovie cardInfo={cardInfo} show={show} handleClose={handleClose} />
+    }
+    {
+        !props.data.length && <div><h2>No Such Results, Please try again later</h2></div>
+    }
         </>
     );
 }

@@ -11,7 +11,7 @@ function ModalMovie({cardInfo, show, handleClose}) {
                     <Modal.Title>Add It To Favorite</Modal.Title>
                 </Modal.Header>
                 <Modal.Body className="body">
-                    <img src={`https://image.tmdb.org/t/p/w500${cardInfo.poster_path}`}/>
+                    <img alt="" src={`https://image.tmdb.org/t/p/w500${cardInfo.poster_path}`}/>
                     <h3>{cardInfo.title}</h3>
                     <p> {cardInfo.overview}</p>
                     <p>{cardInfo.release_date}</p>
